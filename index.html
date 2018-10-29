@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="script.js"></script>
+</head>
+<body onload="setup()"><code id="game"><div></div><div id="logs"><div></div><div></div><div></div></div><div></div><div id="cars"><div></div><div></div><div></div></div><div></div></code>
+  <input type="button" value="Step" onclick="next()" />
+  <input type="button" value="Pause" onclick="stop()" />
+  <input type="button" value="Play" onclick="play()" />
+  <input type="button" value="Reset" onclick="reset()" />
+  <input type="button" value="New Course" onclick="setup()" />
+  <div>Controls: WASD</div>
+  <div>Input:
+    <input type="text" id="controls" />
+    <input type="submit" onclick="input(0)" id="sub" />
+  </div>
+  <div>
+    <textarea id="data" rows=9 cols=12></textarea>
+    <input type="button" onclick="extLoad()" value="Load Course" />
+    <input type="button" onclick="save()" value="Save Course" />
+  </div>
+</body>
+</html>
